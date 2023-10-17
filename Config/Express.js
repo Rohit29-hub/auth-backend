@@ -8,9 +8,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 // cross-origin request
-app.use(cors({
-    origin: 'http://localhost:5173',
-}));
+app.use(cors());
 
 // home route
 app.get('/', (req,res) => {
